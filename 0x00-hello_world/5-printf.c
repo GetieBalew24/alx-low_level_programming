@@ -1,7 +1,10 @@
 #include <stdio.h>
+
 /**
- * * my main function
- * * to print text using printf
+ *  * my main function
+ *
+ *
+ *  * to print text using printf
  */
 
 int main(void)
