@@ -2,8 +2,6 @@
 
 /**
  *  * my main function
- *
- *
  *  * to print text using printf
  */
 
