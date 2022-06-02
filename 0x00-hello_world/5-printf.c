@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * my main function
- * to print text using printf
+ * main entry point
+ *
+ * return alaways 0 (sucess)
  */
-
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
-}
+}	
