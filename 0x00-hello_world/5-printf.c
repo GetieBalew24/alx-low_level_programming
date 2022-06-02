@@ -5,7 +5,7 @@
 *
 *	return alaways 0 (sucess)
 */
-int main(void)
+int main()
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 
