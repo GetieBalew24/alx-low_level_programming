@@ -10,8 +10,6 @@ int main(void)
 {
 	int f1 = 0, f2 = 1, i;
 
-	if (n < 1)
-		return;
 	printf("%lu, ", f1);
 	for (i = 1; i < 98; i++)
 	{
