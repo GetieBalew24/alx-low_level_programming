@@ -6,6 +6,7 @@
  * Description: Multiples of 3, print Fizz. Multiples of 5, print Buzz.
  * Return: 0
  */
+
 int main(void)
 {
 	int i;
