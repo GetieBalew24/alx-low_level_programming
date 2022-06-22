@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - main fun
- * @g :int g
- * @n: int n
- * Return: int
+ * sqrt_check - Checks for the square root of c
+ * @g : Guess at sqrt
+ * @c: Number to find sqrt of
+ * Return: -1 or sqrt of c
  */
 
 int sqrt_check(int g, int c)
