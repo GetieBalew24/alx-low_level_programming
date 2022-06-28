@@ -2,49 +2,43 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid 
- * @width
- * @height
+ * alloc_grid - allocateing 2d array
+ * @width- width of array
+ * @height- height of array
  *
- * return
+ * return- apointer to allocating array
  */
 
 int **alloc_grid(int width, int height)
 {
-	int i, j, k, l;
-	int **a;
+	int **iarray;
+	int i, n;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	a = malloc(sizeof(int *) * height);
+	iarray = malloc(sizeof(int) * height);
 
-	if (a == NULL)
+	if (iarray == NULL)
 	{
-		free(a);
+		free(iarray);
 		return (NULL);
 	}
 
 	for (i = 0; i < height; i++)
 	{
-		a[i] = malloc(sizeof(int) * width);
+		iarray[i] = malloc(sizeof(int) * width);
+		if (iarray == NULL)
+		{
+			free(iarray);
+			return (NULL);
+		}
 
-		if (a[i] == NULL)
+		for (n = 0; n < width; n++)
 		{
-			for (j = i; j >= 0; j--)
-			{
-				free(a[j]);
-			}
-		}
-		free(a);
-		return (NULL);
-	}
-	for (k = 0; k < height; k++)
-	{
-		for (l = 0; l < width; l++)
-		{
-			a[k][l] = 0;
+			iarray[i][n] = 0;
 		}
 	}
-	return (a);
+
+	return (iarray);
 }
