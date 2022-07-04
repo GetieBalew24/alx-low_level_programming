@@ -8,11 +8,12 @@
  * @owner: atribute pointer to char owner's dog
  */
 
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-}dog_t;
+};
 
+typedef struct dog dog_t;
 #endif
