@@ -27,3 +27,20 @@ unsigned int binary_to_uint(const char *b)
 	}
 	return (num);
 }
+
+/**
+ * _strlen - lenght of string
+ * @s:char
+ * Return:int
+ */
+
+int _strlen(const char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		continue;
+	}
+	return (i);
+}
