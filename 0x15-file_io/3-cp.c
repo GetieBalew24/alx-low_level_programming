@@ -103,7 +103,15 @@ int main(int argc, const char *argv[])
 			exit(99);
 		}
 	}
-	if ((_close(file_from) | _close(file_to)) < 0)
+	if (_close(file_from) < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
 		exit(100);
-	return (0);
+	}
+	if (_close(fd_out) < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to);
+		exit(100);
+	}
+
 }
