@@ -103,9 +103,8 @@ int main(int argc, const char *argv[])
 			exit(99);
 		}
 	}
-	if ((_close(file_from) | _close(file_in)) < 0)
-	{  
+	
+	if ((_close(file_from) | _close(file-to)) < 0)
 		exit(100);
-	}
 	return (0);
 }
