@@ -104,11 +104,7 @@ int main(int argc, const char *argv[])
 		}
 	}
 	if ((_close(file_from) | _close(file_in)) < 0)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE %s\n", file_from);
-		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE %s\n", fii                                               
-
-				le_in);  
+	{  
 		exit(100);
 	}
 	return (0);
