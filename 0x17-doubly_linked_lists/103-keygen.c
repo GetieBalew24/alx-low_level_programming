@@ -73,6 +73,7 @@ int f2(char *name, int len)
 {
 	int ret = 0;
 	int i = 0;
+
 	for (; i < len; i++)
 		ret += name[i];
 	return ((ret ^ 0x4f) & 0x3f);
@@ -89,6 +90,7 @@ int f3(char *name, int len)
 {
 	int ret = 1;
 	int i = 0;
+
 	for (; i < len; i++)
 		ret *= name[i];
 	return ((ret ^ 0x55) & 0x3f);
@@ -105,6 +107,7 @@ int f4(char *name, int len)
 {
 	int ret = name[0];
 	int i = 0;
+
 	for (; i < len; i++)
 		if (name[i] > ret)
 			ret = name[i];
@@ -123,6 +126,7 @@ int f5(char *name, int len)
 {
 	int ret = 0;
 	int i = 0;
+
 	for (; i < len; i++)
 		ret += name[i] * name[i];
 	return ((ret ^ 0xef) & 0x3f);
